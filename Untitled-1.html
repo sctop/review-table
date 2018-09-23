@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>无标题文档</title>
+	<link href="css/review_table_main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<!--
+		你好朋友
+		如果你看到这段文字表明你可能Ctrl+U打开了“查看源代码”页
+		或者是按F12打开了“开发者工具”
+
+		开发者博客：https://www.zhangqirun.cn/
+
+		辣鸡iPhone X的不要找我，作者已经适配到疯了
+		（MMP的iPhone X，老子不理你了）
+
+		项目已经在GitHub上开源。项目地址：https://github.com/sctop/review-table/
+
+		目前支持简体中文，有兴趣者可以翻译并提交PR
+		（注：不要机翻，如Google Translate、有道翻译等）
+		翻译要求：文字和注释必须全部翻译成你要翻译的语言
+
+		关于Issues，你可以提交以下问题的其中之一类型：
+		- 自适应问题
+		- 显示问题（例如在Firefox和Google Chrome上的显示模式的bug）
+		- 插入问题（无法加载到你的网站）
+		- 冲突问题（扰乱了网站的布局，可直接PR）
+		- 代码问题（注：这个可以直接提交PR）
+
+		OK，很开心你能看到这里，Let's get started！
+	-->
+	
+	<!--顶部，表格错误信息-->
+	<div id="table_error">
+		<p>表格已隐藏。<font color="red">错误代码 ERR_WIDTH_TOO_NARROW</font></p>
+		<p>错误详细信息：宽度小于360px（最低要求），请使用更大的设备查看！</p>
+		<p>解决方法：如果您使用的是老款手机，使用新款手机或较新的设备查看，您也可以使用<abbr title="Personal Computer">PC</abbr>进行查看。</p>
+		<p>如果您有什么好点子能帮助我解决这个宽度问题，请点击<a href="https://github.com/sctop/review-table/pulls">这里</a>来提交一个PR。</p>
+	</div>
+	<!--09/22晚上测试时气死本宝宝的辣鸡iPhone X宽度，简直亮瞎我的眼睛-->
+	<div id="iphonex_width_warning">
+		<p id="iphonex_width_warning_fir">警告！您目前的设备宽度是iPhone X的宽度！这表明您正在使用的网页宽度为375px（或更小）。</p>
+		<p>使用<abbr title="Personal Computer">PC</abbr>或更大的设备进行访问此页面可以获得更好的效果，因为我们的表格最小支持的宽度为360px。当小于此宽度时，将会显示出错信息并同时隐藏表格。</p>
+		<p>开发者并没有适配iPhone X的宽度以让内容更好的显示（其实是因为技术原因适配不了）。也同时表明图片、表格和文字将会变得很小（或者发生错位）！</p>
+		<p>我对此很抱歉，但我们无能为力。</p>
+		<p>如果您有什么好点子能帮助我解决这个宽度问题，请点击<a href="https://github.com/sctop/review-table/pulls">这里</a>来提交一个PR。</p>
+	</div>
+	
+	<!--软件基本信息-->
+	<!--由于部分合并了单元格，为了保障正常显示可能会有一些空的<tr>，它们是用于隔开的！-->
+	<div class="table_border">
+		<table class="main_table">
+			<tr>
+				<!--软件图标，直接替换src后面引号内的即可-->
+				<td rowspan="4" colspan="4" id="software_pic" style="width=138px;height=138px;"><img src="https://www.zhangqirun.cn/assets/img/profile.jpg" width="128px" height="128px"></td>
+				<!--软件名称，直接替换文字即可-->
+				<td class="fir_info">软件名称：软件评测表格</td>
+				<!--软件价格请直接更改“FREE”为价格-->
+				<td rowspan="4" width="100px" height="100px" id="td_price"><div id="price_name">价格</div><div id="price">FREE</div></td>
+			</tr>
+			<tr>
+				<!--直接替换版本号即可-->
+				<td class="fir_info">版本号：V1.0</td>
+			</tr>
+			<tr>
+				<!--直接替换发布日期即可-->
+				<td class="fir_info">发布时间：2018/09/23</td>
+			</tr>
+			<tr>
+				<!--直接替换大小即可-->
+				<td class="fir_info">大小：好小好小</td>
+			</tr>
+			<tr>
+				<!--按实际情况填写支持的操作系统-->
+				<td colspan="5" rowspan="2">支持的操作系统：Windows Linux MacOS 安卓 iOS</td>
+				<td rowspan="4" width="100px" height="150px" class="right_td">普通分类：实用代码<br>实际分类：超好用代码<br>评测分类：必备神器</td>
+			</tr>
+			<tr></tr> <!--用于隔开-->
+			<tr>
+				<!--用<br>隔开每一个下载地址，然后用<a>标签即可-->
+				<td colspan="5" rowspan="3">下载地址：<br>GitHub源码仓库：<a href="https://github.com/sctop/review-table/archive/master.zip">点击此处下载</a></td>
+			</tr>
+			<tr></tr>
+			<tr>
+				<!--开发商、发行商、代理商按实际情况写-->
+				<td rowspan="4" width="100px" height="150px" class="right_td">开发商：<a href="https://www.zhangqirun.cn/">张颀润</a><br>发行商：<a href="https://www.zhangqirun.cn/">张颀润</a><br>代理商：不存在的，孩子</td>
+			</tr>
+			<tr></tr>
+			<tr>
+				<!--网站按实际情况写-->
+				<!--一般情况下请填写以下所述的网站：玩家论坛、代理商网站、开发商网站、项目开源地址（如果开源）、官方下载地址（指全球同服）、GooglePlay下载地址（如果存在）、国际服/国服下载地址-->
+				<td rowspan="3" colspan="5">网站：<br>项目开源地址：https://github.com/sctop/review-table/<br>开发者博客：https://www.zhangqirun.cn/</td>
+			</tr>
+			<tr></tr> <!--用于隔开-->
+			<tr></tr>
+			<tr>
+				<!--自己理解写去-->
+				<td id="review_time" colspan="6">评测起始时间：啥？&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评测持续时间：喂喂喂我是开发者啊！</td>
+			</tr>
+		</table>
+	</div>
+	
+	<!--软件截图-->
+	<!--由于需要强制控制大小因此div套进去-->
+	<div id="software_sc" class="table_border" style="height: auto;width: auto;">
+		<table class="main_table_s">
+			<!--由于部分原因，请自行在每张图片前面加上一张自制的图片且带有“厂家宣传”和“实际截图”字样的图片（建议宽高等于厂家提供的图）-->
+			<!--厂商宣传-->
+			<tr>
+				<td>
+					<img src="https://img.tapimg.com/market/images/a84f283177f35bc32ef573d27124016f.jpg?imageView2/2/h/560/q/40/format/jpg/interlace/1/ignore-error/1">
+				</td>
+				<td>
+					<img src="https://img.tapimg.com/market/images/a84f283177f35bc32ef573d27124016f.jpg?imageView2/2/h/560/q/40/format/jpg/interlace/1/ignore-error/1">
+				</td>
+				<td>
+					<img src="https://img.tapimg.com/market/images/a84f283177f35bc32ef573d27124016f.jpg?imageView2/2/h/560/q/40/format/jpg/interlace/1/ignore-error/1">
+				</td>
+			</tr>
+			<!--实际截图-->
+			<tr>
+				<td>
+					<img src="https://img.tapimg.com/market/images/a84f283177f35bc32ef573d27124016f.jpg?imageView2/2/h/560/q/40/format/jpg/interlace/1/ignore-error/1">
+				</td>
+				<td>
+					<img src="https://img.tapimg.com/market/images/a84f283177f35bc32ef573d27124016f.jpg?imageView2/2/h/560/q/40/format/jpg/interlace/1/ignore-error/1">
+				</td>
+				<td>
+					<img src="https://img.tapimg.com/market/images/a84f283177f35bc32ef573d27124016f.jpg?imageView2/2/h/560/q/40/format/jpg/interlace/1/ignore-error/1">
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	<!--评分-->
+	<div class="table_border">
+		<table class="main_table" id="pingfen_table">
+			<tr>
+				<td colspan="2">评分</td>
+			</tr>
+			<!--用<tr>分割每一项评分-->
+			<tr><td>画面</td><td>1/10</td></tr>
+		</table>
+	</div>
+	
+	<!--分割线-->
+	<hr />
+	
+	<!--评测-->
+	<div>
+		评测时间！用HTML书写你的评测感受吧！
+	</div>
+	
+	<!--分割线-->
+	<hr />
+	
+	<!--底部请直接提供所有链接-->
+	<!--下载链接-->
+	<div class="table_border">
+		<table class="main_table">
+			<tr><td class="center_title">下载链接：</td></tr>
+			<tr><td>GitHub源码仓库：<a href="https://github.com/sctop/review-table/archive/master.zip">点击此处下载</a></td></tr>
+		</table>
+	</div>
+	<!--这边是网站的-->
+	<div class="table_border">
+		<table class="main_table">
+			<tr><td class="center_title">关于此软件的网站</td></tr>
+			<tr><td>项目开源地址：https://github.com/sctop/review-table/<br>开发者博客：https://www.zhangqirun.cn/</td></tr>
+		</table>
+	</div>
+</body>
+</html>

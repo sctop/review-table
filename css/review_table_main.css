@@ -1,0 +1,43 @@
+/*基础代码*/
+/*名称、版本号、大小、发布时间、右侧*/
+.fir_info，.right_td{text-align:left;word-break: break-all;overflow:auto;}
+/*价格文字显示大小*/
+#price_name{font-size:220%;}  /*“价格”字样*/
+#price{font-size:170%;}       /*价格*/
+#td_price{text-align: left;word-break:break-all;overflow:auto;height: 100%}   /*价格td*/
+/*软件截图*/
+#software_sc img{height: 70%;padding: 0px;}
+#software_sc {white-space:nowrap;overflow-x: auto;overflow-y: hidden;overflow:auto;}
+/*表格*/
+.main_table tr td{border:1px solid silver}
+.table_border{border:1px solid silver}
+.table_border{margin-bottom:10px;}
+.main_table{table-layout:fixed;	}
+.main_table{margin-bottom: 0px}
+.main_table{overflow:auto;word-break: break-all;}
+.main_table,.main_table_s{width: 100%;}   /*自适应*/
+/*软件图标，内边框5px*/
+#software_pic{text-align: center;padding: 5px;width: 138px;height: 138px;}
+/*表格显示错误*/
+#table_error{display:none;}
+/*辣鸡iPhone X宽度警告*/
+#iphonex_width_warning{display:none;}
+#iphonex_width_warning_fir {color:red;}
+/*集体居中*/
+.center_title, #review_time, #pingfen_table{text-align: center;}
+
+/*@meida代码*/
+/*如果设备宽度小于360px，那么隐藏*/
+@media screen and (max-width:375px)
+{
+	#iphonex_width_warning{display:block;}
+}
+@media screen and (max-width:360px)
+{
+	.main_table, .main_table_s, #iphonex_width_warning{display:none;}
+	#table_error{display:block;}
+}
+@media screen and (max-width:720px)
+{
+	.main_table{width:100%;}
+}
