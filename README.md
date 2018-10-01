@@ -37,9 +37,9 @@
 请访问https://www.zhangqirun.cn/about.html 获取更多
 
 ## 更新日志
+20181001 添加评分标准（Grading.md）
 
 20180923 上传源码
 
 ### 预计下一版本更新
-
-评分机制，将在biaozhun.md中说明
+没了。

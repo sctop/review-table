@@ -33,6 +33,7 @@
 		OK，很开心你能看到这里，Let's get started！
 	-->
 	
+	<!--复制下面内容即可-->
 	<!--顶部，表格错误信息-->
 	<div id="table_error">
 		<p>表格已隐藏。<font color="red">错误代码 ERR_WIDTH_TOO_NARROW</font></p>
@@ -40,11 +41,11 @@
 		<p>解决方法：如果您使用的是老款手机，使用新款手机或较新的设备查看，您也可以使用<abbr title="Personal Computer">PC</abbr>进行查看。</p>
 		<p>如果您有什么好点子能帮助我解决这个宽度问题，请点击<a href="https://github.com/sctop/review-table/pulls">这里</a>来提交一个PR。</p>
 	</div>
-	<!--09/22晚上测试时气死本宝宝的辣鸡iPhone X宽度，简直亮瞎我的眼睛-->
-	<div id="iphonex_width_warning">
-		<p id="iphonex_width_warning_fir">警告！您目前的设备宽度是iPhone X的宽度！这表明您正在使用的网页宽度为375px（或更小）。</p>
-		<p>使用<abbr title="Personal Computer">PC</abbr>或更大的设备进行访问此页面可以获得更好的效果，因为我们的表格最小支持的宽度为360px。当小于此宽度时，将会显示出错信息并同时隐藏表格。</p>
-		<p>开发者并没有适配iPhone X的宽度以让内容更好的显示（其实是因为技术原因适配不了）。也同时表明图片、表格和文字将会变得很小（或者发生错位）！</p>
+	<!--低于400px的设备直接显示，这是最低限制了-->
+	<div id="width_warning">
+		<p id="iphonex_width_warning_fir">警告！您目前的设备宽度不在最适合的宽度内！最好的设备宽度应该大于400px，但是您当前的设备宽度小于400px。</p>
+		<p>使用<abbr title="Personal Computer">PC</abbr>或更大的设备进行访问此页面可以获得更好的效果。我们的表格最小支持的宽度为360px。当小于此宽度时，将会显示出错信息并同时隐藏表格。</p>
+		<p>但是当小于400px时也会显示一个。原因就是在小于400px时显示的效果很差。</p>
 		<p>我对此很抱歉，但我们无能为力。</p>
 		<p>如果您有什么好点子能帮助我解决这个宽度问题，请点击<a href="https://github.com/sctop/review-table/pulls">这里</a>来提交一个PR。</p>
 	</div>
@@ -98,7 +99,7 @@
 			<tr></tr>
 			<tr>
 				<!--自己理解写去-->
-				<td id="review_time" colspan="6">评测起始时间：啥？&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评测持续时间：喂喂喂我是开发者啊！</td>
+				<td id="review_time" colspan="6">评测起始时间：啥？<br>评测持续时间：喂喂喂我是开发者啊！</td>
 			</tr>
 		</table>
 	</div>
